@@ -1,6 +1,9 @@
 package com.train.model;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 066bade831e2b0af9b8f825b401ecfb1971b8bd9
 import java.sql.Date;
 
 import javax.persistence.Entity;
@@ -8,6 +11,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 import org.springframework.stereotype.Component;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
 
 import lombok.Data;
 
@@ -23,8 +28,12 @@ public class TrainDetails {
 	private String tname;	 
 	private String start; 
 	private String stop;
+<<<<<<< HEAD
 	
 	//@JsonFormat(pattern = "yyyy-MM-dd")
+=======
+	@JsonFormat(pattern="yyyy-MM-dd")
+>>>>>>> 066bade831e2b0af9b8f825b401ecfb1971b8bd9
 	private Date date;	//take care of format
 	
 	private int totalCoach;	 
