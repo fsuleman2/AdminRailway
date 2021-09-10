@@ -24,10 +24,7 @@ public class TrainDetails {
 	private String tname;	 
 	private String start; 
 	private String stop;
-	
-	//@JsonFormat(pattern = "yyyy-MM-dd")
 
-	@JsonFormat(pattern="yyyy-MM-dd")
 	private Date date;	//take care of format
 	
 	private int totalCoach;	 
