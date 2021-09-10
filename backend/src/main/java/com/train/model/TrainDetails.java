@@ -8,6 +8,8 @@ import javax.persistence.Id;
 
 import org.springframework.stereotype.Component;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import lombok.Data;
 
 @Entity
@@ -22,8 +24,8 @@ public class TrainDetails {
 	private String tname;	 
 	private String start; 
 	private String stop;
-	
-	private String date;	//take care of format
+	@JsonFormat(pattern="yyyy-MM-dd")
+	private Date date;	//take care of format
 	
 	private int totalCoach;	 
 	private int acSleeperCoach;	 
