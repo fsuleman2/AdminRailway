@@ -1,8 +1,7 @@
 package com.train.service;
 
-import org.springframework.stereotype.Service;
+import com.train.model.TrainDetails;
 
-@Service
 public interface ServiceAdmin {
-
+	public TrainDetails createTrain(TrainDetails traindetails);
 }
