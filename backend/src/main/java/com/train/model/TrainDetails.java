@@ -1,6 +1,5 @@
 package com.train.model;
 
-
 import java.sql.Date;
 
 import javax.persistence.Entity;
@@ -26,7 +25,6 @@ public class TrainDetails {
 	private String start; 
 	private String stop;
 
-	@JsonFormat(pattern="yyyy-MM-dd")
 	private Date date;	//take care of format
 	
 	private int totalCoach;	 
@@ -45,3 +43,7 @@ public class TrainDetails {
 
 	
 }
+
+
+
+
