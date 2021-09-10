@@ -1,5 +1,7 @@
 package com.train.service.impl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +17,10 @@ public class ServiceAdminImpl implements ServiceAdmin {
 	public TrainDetails createTrain(TrainDetails traindetails) {
 		admindao.save(traindetails);
 		return null;
+	}
+	@Override
+	public List<TrainDetails> getAllTrains() {
+		return admindao.findAll();
 	}
 
 }

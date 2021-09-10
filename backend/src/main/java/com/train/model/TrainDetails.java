@@ -1,11 +1,13 @@
 package com.train.model;
 
-import java.sql.Date;
+
+import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Component;
 
 import lombok.Data;
@@ -23,7 +25,8 @@ public class TrainDetails {
 	private String start; 
 	private String stop;
 	
-	private String date;	//take care of format
+	@DateTimeFormat
+	private Date date;	//take care of format
 	
 	private int totalCoach;	 
 	private int acSleeperCoach;	 
